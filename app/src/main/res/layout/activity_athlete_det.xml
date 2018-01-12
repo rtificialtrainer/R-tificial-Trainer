@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dell.rtificialtrainer.AthleteDetActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/hint_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descr_size"
+                android:text="@string/hint_name"/>
+
+            <TextView
+                android:id="@+id/athlete_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/value_size"
+                android:text=""
+                android:layout_toRightOf="@+id/hint_name"
+                android:gravity="end"
+                android:textColor="@color/detCol"/>
+
+            <TextView
+                android:id="@+id/hint_surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descr_size"
+                android:text="@string/hint_surname"
+                android:layout_below="@id/athlete_name"/>
+
+            <TextView
+                android:id="@+id/athlete_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/value_size"
+                android:text=""
+                android:layout_below="@id/athlete_name"
+                android:layout_toRightOf="@+id/hint_surname"
+                android:gravity="end"
+                android:textColor="@color/detCol"/>
+
+            <TextView
+                android:id="@+id/hint_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descr_size"
+                android:text="@string/hintSex"
+                android:layout_below="@id/athlete_surname"/>
+
+            <TextView
+                android:id="@+id/athlete_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/value_size"
+                android:text=""
+                android:layout_below="@id/athlete_surname"
+                android:layout_toRightOf="@+id/hint_sex"
+                android:gravity="end"
+                android:textColor="@color/detCol"/>
+
+            <TextView
+                android:id="@+id/hint_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descr_size"
+                android:text="@string/hintAge"
+                android:layout_below="@id/athlete_sex" />
+
+            <TextView
+                android:id="@+id/athlete_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/value_size"
+                android:text=""
+                android:layout_below="@id/athlete_sex"
+                android:layout_toRightOf="@+id/hint_age"
+                android:gravity="end"
+                android:textColor="@color/detCol"/>
+
+            <TextView
+                android:id="@+id/hint_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descr_size"
+                android:text="@string/hintWeight"
+                android:layout_below="@id/athlete_age" />
+
+            <TextView
+                android:id="@+id/athlete_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/value_size"
+                android:text=""
+                android:layout_below="@id/athlete_age"
+                android:layout_toRightOf="@+id/hint_weight"
+                android:gravity="end"
+                android:textColor="@color/detCol"/>
+
+            <TextView
+                android:id="@+id/hint_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descr_size"
+                android:text="@string/hintHeight"
+                android:layout_below="@id/athlete_weight" />
+
+            <TextView
+                android:id="@+id/athlete_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/value_size"
+                android:text=""
+                android:layout_below="@id/athlete_weight"
+                android:layout_toRightOf="@+id/hint_weight"
+                android:gravity="end"
+                android:textColor="@color/detCol"/>
+
+            <TextView
+                android:id="@+id/hint_bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descr_size"
+                android:text="@string/hintBmi"
+                android:layout_below="@id/athlete_height" />
+
+            <TextView
+                android:id="@+id/athlete_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/value_size"
+                android:text=""
+                android:layout_below="@id/athlete_height"
+                android:layout_toRightOf="@+id/hint_bmi"
+                android:gravity="end"
+                android:textColor="@color/detCol"/>
+
+            <TextView
+                android:id="@+id/hint_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descr_size"
+                android:text="@string/hintRecord"
+                android:layout_below="@id/athlete_bmi" />
+
+            <TextView
+                android:id="@+id/athlete_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/value_size"
+                android:text=""
+                android:layout_below="@id/athlete_bmi"
+                android:layout_toRightOf="@+id/hint_record"
+                android:gravity="end"
+                android:textColor="@color/detCol"/>
+
+            <TextView
+                android:id="@+id/hint_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descr_size"
+                android:text="@string/hintEmail"
+                android:layout_below="@id/athlete_record" />
+
+            <TextView
+                android:id="@+id/athlete_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/email_value_size"
+                android:text=""
+                android:layout_below="@id/athlete_record"
+                android:layout_toRightOf="@+id/hint_email"
+                android:gravity="end"
+                android:textColor="@color/detCol"/>
+
+            <TextView
+                android:id="@+id/hint_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descr_size"
+                android:text="ID:"
+                android:layout_below="@id/athlete_email"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/athlete_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/value_size"
+                android:text=""
+                android:layout_below="@id/athlete_email"
+                android:layout_toRightOf="@+id/hint_id"
+                android:gravity="end"
+                android:textColor="@color/detCol"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

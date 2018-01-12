@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/form_dispname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/displayName"/>
+    <EditText
+        android:id="@+id/form_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textAlignment="textEnd"
+        android:gravity="end"
+        />
+    <TextView
+        android:id="@+id/form_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAlignment="textEnd"
+        android:gravity="end"
+        android:visibility="gone"
+        android:textColor="@color/outputCol"
+        />
+    <Spinner
+        android:id="@+id/form_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:spinnerMode="dialog"
+        ></Spinner>
+
+    <RadioGroup
+        android:id="@+id/form_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/form_radioname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_text_form"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/displayName"/>
+
+        <RadioButton
+            android:id="@+id/form_radio_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioYes"
+            android:checked="true"
+            android:layout_weight="1"
+            />
+
+        <RadioButton
+            android:id="@+id/form_radio_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioNo"
+            android:layout_weight="1"
+            />
+    </RadioGroup>
+
+</LinearLayout>

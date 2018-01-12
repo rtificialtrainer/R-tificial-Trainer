@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.dell.rtificialtrainer.AthleteFormActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/form_name"
+                android:hint="@string/hint_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName|textCapWords"/>
+
+            <EditText
+                android:id="@+id/form_surname"
+                android:hint="@string/hint_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName|textCapWords"/>
+
+            <RadioGroup
+                android:id="@+id/form_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hintSex"
+                    android:textSize="20sp"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/form_woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioWoman"
+                    android:checked="true"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/form_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioMan"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+            <EditText
+                android:id="@+id/form_dateOfBirth"
+                android:hint="@string/hintBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/form_weight"
+                android:hint="@string/hintWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:id="@+id/form_height"
+                android:hint="@string/hintHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:id="@+id/form_record"
+                android:hint="@string/hintRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/form_email"
+                android:hint="@string/hintEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/form_add_but"
+                    android:text="@string/addAthBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="addAthleteBut"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/form_update_but"
+                    android:text="@string/saveChangeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="updateAthleteBut"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/form_restore_but"
+                    android:text="@string/restoreDefBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="restoreAthleteBut"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/form_clear_but"
+                    android:text="@string/clearFormBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="clearAthleteForm"
+                    android:paddingTop="6dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
